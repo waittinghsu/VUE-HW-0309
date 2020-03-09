@@ -47,7 +47,7 @@ export default {
         }
       }
       if (value === "") {
-        callback(new Error("請再次輸入密碼"));
+        callback(new Error("請輸入密碼"));
       } else if (!inputStatus) {
         callback(
           new Error("密碼的任意連續 6 碼，不可以和帳號的任意連續 6 碼重複!")
@@ -78,7 +78,7 @@ export default {
           {
             required: true,
             type: "email",
-            message: "請輸入Email",
+            message: "請輸入Email格式",
             trigger: "blur"
           }
         ],
