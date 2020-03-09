@@ -74,7 +74,14 @@ export default {
         pwd: "wwwwtuoljgwwww"
       },
       rules: {
-        account: [{ required: true, message: "請輸入帳號", trigger: "blur" }],
+        account: [
+          {
+            required: true,
+            type: "email",
+            message: "請輸入帳號",
+            trigger: "blur"
+          }
+        ],
         pwd: [{ validator: validatePass2, required: true, trigger: "blur" }]
       }
     };
