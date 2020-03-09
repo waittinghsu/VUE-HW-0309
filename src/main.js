@@ -1,6 +1,16 @@
 import Vue from "vue";
 import App from "./App.vue";
-import { Button, Input, Card, Row } from "element-ui";
+import {
+  Button,
+  Input,
+  Card,
+  Row,
+  Form,
+  FormItem,
+  Col,
+  Container,
+  Image
+} from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
 
@@ -13,6 +23,11 @@ Vue.use(Button);
 Vue.use(Input);
 Vue.use(Card);
 Vue.use(Row);
+Vue.use(Col);
+Vue.use(Form);
+Vue.use(FormItem);
+Vue.use(Container);
+Vue.use(Image);
 Vue.config.productionTip = false;
 new Vue({
   render: h => h(App)
