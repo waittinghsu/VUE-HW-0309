@@ -1,21 +1,22 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Hello Vue in CodeSandbox!"/>
+    <Login/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import Login from "./view/Login";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Login
   }
 };
 </script>
 
-<style>
+<style lang="scss">
+@import './assets/style/custom.scss';
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,5 +24,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  $--font-path: "~element-ui/lib/theme-chalk/fonts";
+  @import "~element-ui/packages/theme-chalk/src/index";
 }
 </style>
